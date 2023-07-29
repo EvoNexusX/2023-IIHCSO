@@ -1,7 +1,8 @@
-#2023_IICSO
-#Introduction:
-Ying Zhu, Ziyu Zhang, Yuetong Sun and Peilan Xu. The first place of the Competition on Seeking Multiple Optima in Dynamic Environments, IEEE Congress on Evolutionary Computation (IEEE CEC) 2023, July 1-5, Chicago USA.
+# <center>BACAP-2023-IICSO</center>  
 
-Operating Instructions:
-1.algorithm/KEDE_V4.m is the entrance of the main program, set fn and run, and then just run it.
-2.algorithm/result.m is used to generate the result.
+## Introduction:
+  Yanghe~Zou, Peilan~Xu, Hao~Dai, Heng~Song, Wenjian~Luo. Intra-and-Inter Competitive Swarm Optimization for Large-Scale Berth Allocation and Crane Assignment
+  
+## Operating Instructions:
+  1.algorithm/main.m is the entrance of the main program, set fun_num,c and N, and then just run it.  
+  2.algorithm/IICSO.m is the function of IICSO.  
