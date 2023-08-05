@@ -78,7 +78,6 @@ function bestfit = IIHCSO(fun_num,c,N)
     for i = 2 : m
         c(i) = c(i) + c(i-1);
     end
-    Size = Size - 1;
     while(tot <=N)
             for i = 1 :Size
                 check = 0;
@@ -112,7 +111,7 @@ function bestfit = IIHCSO(fun_num,c,N)
                 av_position(n+1:3*n) = av_position(n+1:3*n)./cl_size;
                 r = min(floor(G_id*rand(1)+1),G_id);
                 r1 = rand();r2 = rand();r3 = rand();
-                if epsiloncomper(fitness_p(:,Goup(r)),fitness_p(:,i),tot,N,e0) == 1
+                if r>0 && epsiloncomper(fitness_p(:,Goup(r)),fitness_p(:,i),tot,N,e0) == 1
                      check = 1;
                      Velocity(n+1:3*n,i) = r1*Velocity(n+1:3*n,i) + r2*(Position(n+1:3*n,Goup(r))-Position(n+1:3*n,i))+r3*phi*(av_position(n+1:3*n) - Position(n+1:3*n,i)); 
                      SO1 = SO_Multiplication(r1,SO(:,i));
