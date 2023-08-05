@@ -78,6 +78,7 @@ function bestfit = IIHCSO(fun_num,c,N)
     for i = 2 : m
         c(i) = c(i) + c(i-1);
     end
+    Size = Size - 1;
     while(tot <=N)
             for i = 1 :Size
                 check = 0;
