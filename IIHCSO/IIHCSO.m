@@ -30,7 +30,6 @@ particles.pos = rand(npop,Dim*2).*(ub-lb) + lb ;
 particles.vel = zeros(npop,Dim*2);
 particles.fitness = zeros(npop,1);
 particles.offset = zeros(npop,1);
-particles.group = zeros(npop,1);
 % Initialize the swap sequence
 empty_sequence.vel = [];
 empty_sequence.pos = [];
