@@ -92,7 +92,7 @@ function [fitness,offset] = Fitness(x,s,ship)
         end
         Offduty_time(i) = Berthing_time(i) + ctime + ship_w(i);
         Coast = Vis_Bridge_Coast(Coast,x(i),x(i)+ship_len(i),Offduty_time(i));
-        total_wait = total_wait+ Offduty_time(i) - Berthing_time(i);
+        total_wait = total_wait+ Offduty_time(i) - ship_t(i);
     end
     fitness = total_wait;
     offset = ship_offset;
